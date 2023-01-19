@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'RobotoRegular';
-  src: local('RobotoRegular'), local('RobotoRegular'), url('/fonts/RobotoRegular.woff2') format('woff2'), url('/fonts/RobotoRegular.woff') format('woff');
+  src: local('RobotoRegular'), local('RobotoRegular'), url("../fonts/RobotoRegular.woff2") format('woff2'), url("../fonts/RobotoRegular.woff") format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'RobotoBold';
-  src: local('RobotoBold'), local('RobotoBold'), url('/fonts/RobotoBold.woff2') format('woff2'), url('/fonts/RobotoBold.woff') format('woff');
+  src: local('RobotoBold'), local('RobotoBold'), url("../fonts/RobotoBold.woff2") format('woff2'), url("../fonts/RobotoBold.woff") format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -30,11 +30,7 @@ html {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
 }
@@ -66,6 +62,8 @@ ul {
   background-color: transparent;
   cursor: pointer;
 }
+
+/* Общие стили */
 
 .link {
   display: inline-block;
@@ -152,7 +150,7 @@ ul {
   align-items: center;
   width: 30px;
   height: 30px;
-  background-image: url(/img/burger_3d.svg);
+  background-image: url('../img/burger_3d.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -160,7 +158,7 @@ ul {
 }
 
 .burger.active {
-  background-image: url(/img/burger_3d_close.png);
+  background-image: url('../img/burger_3d_close.png');
 }
 
 .nav__list {
@@ -176,6 +174,7 @@ ul {
 
 .nav__link {
   display: inline-block;
+  /* white-space: nowrap; */
   font-size: 18px;
   line-height: 21px;
 }
@@ -186,7 +185,7 @@ ul {
   padding-top: 15px;
   padding-bottom: 12px;
   color: var(--color-white);
-  background-image: url(/img/Hero_background.svg);
+  background-image: url('../img/Hero_background.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -265,15 +264,15 @@ ul {
 }
 
 .result__item--1 {
-  background-image: url(/img/about_eye.png);
+  background-image: url('../img/about_eye.png');
 }
 
 .result__item--2 {
-  background-image: url(/img/about_fingers.png);
+  background-image: url('../img/about_fingers.png');
 }
 
 .result__item--3 {
-  background-image: url(/img/about_sound.png);
+  background-image: url('../img/about_sound.png');
 }
 
 .result__item_description {
@@ -366,7 +365,7 @@ ul {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
-  background: url(/img/courses_icon_watch_.png) left no-repeat;
+  background: url('../img/courses_icon_watch_.png') left no-repeat;
 }
 
 .courses__item_pic img {
